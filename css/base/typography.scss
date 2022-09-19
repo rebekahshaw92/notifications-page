@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$font: 'Plus Jakarta Sans', sans-serif;
+$veryDarkBlue: hsl(224, 21%, 14%);
+$darkGrayishBlue: hsl(219, 12%, 42%);
+$blue: hsl(219, 85%, 26%);
+$grayishBlue: hsl(219, 14%, 63%);
+$red: hsl(1, 90%, 64%);
+
+
+
+body {
+    font-family: $font;
+}
+
+.notifications {
+    font-weight: 800;
+    margin: 5%;
+    font-size: 1.4rem;
+    color: $veryDarkBlue;
+}
+
+.bg-secondary {
+    background-color: $blue !important;
+}
+ 
+.markAll {
+    font-size: 1.2rem;
+    margin: 5%;
+    margin-right: 1%;
+    color: $grayishBlue;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.name {
+    font-weight: 800;
+    color: $veryDarkBlue;
+    margin-right: 1%;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.card-text {
+    color: $grayishBlue;
+    font-weight: 800;
+    margin-top: 5%;
+}
+
+.cardLink {
+    margin-left: 2%;
+    text-decoration: none;
+    color: $darkGrayishBlue;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.time {
+    color: $grayishBlue;
+    margin-top: -4%;
+    @include media-breakpoint-up(lg){
+        margin-top: -2%;
+    }
+}
+
+.dot {
+    color: $red;
+    font-size: 1.2rem;
+}
+
+.comment {
+    margin: 5%;
+    color: $grayishBlue;
+    font-weight: 800;
+}
+
+.chess {
+    color: $blue;
+}
